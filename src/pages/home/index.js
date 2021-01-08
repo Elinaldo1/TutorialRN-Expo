@@ -4,6 +4,7 @@ import { StyleSheet , View, TouchableOpacity, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 import Header from '../header/index';
 import {styles, Text} from './styles';
+import { AntDesign } from '@expo/vector-icons'
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
     <>
       <Header caption="Tela 1" />
       <ScrollView /*style={styles.container}*/>
-
+      <AntDesign name = "swap" style = {{fontSize:30}} />
           <TouchableOpacity style={styles.button} onPress = {incrementar}>
             <Text >CONTADOR</Text>
           </TouchableOpacity> 

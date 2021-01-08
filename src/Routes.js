@@ -21,7 +21,7 @@ const Routes = () => {
 
 
     <NavigationContainer>
-      {/* <Tab.Navigator initialRouteName = "Home" tabBarOptions = {
+      <Tab.Navigator initialRouteName = "Home" tabBarOptions = {
         {
           activeBackgroundColor: "fff",
           inactiveBackgroundColor: "313131"
@@ -33,13 +33,13 @@ const Routes = () => {
       <Tab.Screen name = "Form" component = {Form} />
       <Tab.Screen name = "Form2" component = {Form2} />
       <Tab.Screen name = "Graficos" component = {Grafico} />
-    </Tab.Navigator> */}
+    </Tab.Navigator>
     {/*     <AppStack.Navigator headerMode='none' >
           <AppStack.Screen name="Home" component={Home} />
           <AppStack.Screen name="Form" component={Form} />
           <AppStack.Screen name="Form2" component={Form2} />
         </AppStack.Navigator> */}
-        <Drawer.Navigator
+        {/* <Drawer.Navigator
         
         initialRouteName = "Home" 
         drawerStyle = {style.container} 
@@ -79,7 +79,7 @@ const Routes = () => {
                 }
               }          
             />          
-        </Drawer.Navigator>
+        </Drawer.Navigator> */}
     </NavigationContainer>
 
   );

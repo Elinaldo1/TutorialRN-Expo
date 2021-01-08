@@ -1,7 +1,7 @@
 import React from 'react';
 import {ActivityIndicator} from 'react-native';
 
-import { BarChart, Grid } from 'react-native-svg-charts';
+import { LineChart, Grid } from 'react-native-svg-charts';
 
 
 export function CustomBarChart(chartData, chartDimensions) {
@@ -10,7 +10,7 @@ export function CustomBarChart(chartData, chartDimensions) {
          const data = [50, 10, 40, 95, -4, -24, null, 85, undefined, 0, 35, 53, -53, 24, 50, -20, -80]
 
         return chartDimensions ? (
-            <BarChart
+            <LineChart
                 data= {chartData.data}
                 svg={{ fill }}//cor das barras
                 spacingInner = {0.25}//espaço entre as barras
@@ -29,7 +29,6 @@ export function CustomBarChart(chartData, chartDimensions) {
                 }} 
                // contentInset={{ top: 30, bottom: 10 }}>
                 >
-            </BarChart>
+            </LineChart>
          ): <ActivityIndicator size = "large" color= "#f11"/>
        }
-
