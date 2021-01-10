@@ -54,6 +54,22 @@ export default function Grafico() {
             // chartDimensions = {dimensaoGafico3}
           />
       </View>
+      <View 
+            onLayout = {({ nativeEvent: { layout:{width, height}}}) => setdimensaoGrafico3({width, height})}
+            style = {Styles.grafico} >
+          <CustomBarChart
+            data = {dadosGrafico} 
+            // chartDimensions = {dimensaoGafico3}
+          />
+      </View>
+      <View 
+            onLayout = {({ nativeEvent: { layout:{width, height}}}) => setdimensaoGrafico3({width, height})}
+            style = {Styles.grafico} >
+          <CustomBarChart
+            data = {dadosGrafico} 
+            // chartDimensions = {dimensaoGafico3}
+          />
+      </View>
       </View>
   </>
   

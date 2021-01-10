@@ -5,7 +5,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {StyleSheet, Text} from 'react-native';
 
-
+import Login from './pages/login/index';
 import Home from './pages/home/index';
 import Form from './pages/forms/form1';
 import Form2 from './pages/forms/form2';
@@ -21,7 +21,7 @@ const Routes = () => {
 
 
     <NavigationContainer>
-      {/* <Tab.Navigator initialRouteName = "Home" tabBarOptions = {
+      <Tab.Navigator initialRouteName = "Login" tabBarOptions = {
         {
           activeBackgroundColor: "fff",
           inactiveBackgroundColor: "313131"
@@ -29,24 +29,34 @@ const Routes = () => {
         }
         
       }>
+      <Tab.Screen name = "Login" component = {Login} />
       <Tab.Screen name = "Home" component = {Home} />
       <Tab.Screen name = "Form" component = {Form} />
       <Tab.Screen name = "Form2" component = {Form2} />
       <Tab.Screen name = "Graficos" component = {Grafico} />
-    </Tab.Navigator> */}
+    </Tab.Navigator>
     {/*     <AppStack.Navigator headerMode='none' >
           <AppStack.Screen name="Home" component={Home} />
           <AppStack.Screen name="Form" component={Form} />
           <AppStack.Screen name="Form2" component={Form2} />
         </AppStack.Navigator> */}
-        <Drawer.Navigator
+        {/* <Drawer.Navigator
         
-        initialRouteName = "Home" 
+        initialRouteName = "Login" 
         drawerStyle = {style.container} 
         drawerContentOptions= {{ 
           activeBacgroundColor: "#fff",
          inactiveTintColor: "#fff"
         }} >
+              <Drawer.Screen name="Login" component  = {Home} 
+            options = {
+              {
+                drawerLabel: (({focused}) => <Text style={{color: focused ? '#fff' : '#ff39' }}>Login</Text>)
+                // drawerIcon: (({focused})=> <Icon color={focused ? '#f' : '#ff'} name = 'Home' /> )
+              }
+            } 
+            />         
+
             <Drawer.Screen name="Home" component  = {Home} 
             options = {
               {
@@ -79,7 +89,7 @@ const Routes = () => {
                 }
               }          
             />          
-        </Drawer.Navigator>
+        </Drawer.Navigator> */}
     </NavigationContainer>
 
   );

@@ -3,21 +3,23 @@ import { StyleSheet } from 'react-native';
 
 export const Styles = StyleSheet.create({
   container: {
-    padding:30,
+    
     flex:1, 
-    // flexDirection:'row',
-     backgroundColor: '#ff15',
+    paddingTop:30,
+     backgroundColor: 'rgb(253, 145, 113)',
      alignItems:'center',
-     justifyContent:'space-around'
+     justifyContent:'space-around',
 
    },
   
   grafico:{
-    flex:1,
-    backgroundColor: '#fff',
-    maxHeight:200,
-    height:200,
-    width:300
+    marginBottom:5,
+    flex: 1,
+    padding:10,
+    width: '90%',
+    borderTopWidth:1,
+    // borderWidth:1,
+    // backgroundColor: '#fff',
   },
   boxgrafico2:{
   }

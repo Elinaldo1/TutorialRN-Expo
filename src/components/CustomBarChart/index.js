@@ -33,11 +33,11 @@ export function CustomBarChart(chartData, chartDimensions) {
                 yMin = {0}//considera 0 como valor mínimo do eixo y
                 yAccessor = {({item})=> item.value}//quando data for um vetor de ojts yacessor me retorna o item que será o valor da barra(item.value do vetor Helpers/dadosGrafico). 
                 style = {{
-                   height:200,
-                   width:300,
-            
-                  //   height: chartDimensions.height,
-                  //   width: chartDimensions.width ,
+                  //  height:200,
+                  //  width:300,
+                    flex:1,
+                    height: chartDimensions.height,
+                    width: chartDimensions.width ,
                    borderRadius: 8,
                   //  borderWidth:1
                 }} 
