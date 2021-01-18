@@ -4,25 +4,55 @@ export const dadosGrafico = [
   {
     value:3.5,
     svg: {
-      fill: 'rgb(172, 220, 129, 0.7)',
+      fill: 'rgb(172, 222, 129, 1.9)',
     },
  },
  {
   value:5,
   svg: {
-    fill: 'rgb(1, 220, 129, 0.7)',
+    fill: 'rgb(1, 222, 129, 0.7)',
   },
 },
 {
   value:2,
   svg: {
-    fill: 'rgb(172, 220, 129, 0.7)',
+    fill: 'rgb(172, 222, 129, 0.7)',
   },
 },
 {
   value:3,
   svg: {
-    fill: 'rgb(172, 220, 129, 0.7)',
+    fill: 'rgb(172, 11, 129, 0.7)',
+  },
+},
+{
+  value:null,
+  svg: {
+    fill: 'rgb(172, 11, 129, 0.7)',
+  },
+},
+{
+  value:8,
+  svg: {
+    fill: 'rgb(172, 11, 129, 0.7)',
+  },
+},
+{
+  value:6,
+  svg: {
+    fill: 'rgb(172, 11, 129, 0.7)',
+  },
+},
+{
+  value:3,
+  svg: {
+    fill: 'rgb(172, 11, 129, 0.7)',
+  },
+},
+{
+  value:2,
+  svg: {
+    fill: 'rgb(172, 222, 129, 0.7)',
   },
 },
 

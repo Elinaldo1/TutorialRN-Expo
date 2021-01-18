@@ -10,9 +10,11 @@ export const Styles = StyleSheet.create({
      alignItems:'center',
      justifyContent:'space-around',
 
+
    },
   
   grafico:{
+
     marginBottom:5,
     flex: 1,
     padding:10,
@@ -20,7 +22,11 @@ export const Styles = StyleSheet.create({
     borderTopWidth:1,
     // borderWidth:1,
     // backgroundColor: '#fff',
+
   },
   boxgrafico2:{
+    padding:10,
+    width:200,
+    height:200
   }
 });

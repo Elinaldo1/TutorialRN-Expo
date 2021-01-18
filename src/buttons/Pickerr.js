@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 
 
- function Pickerr (selectValue,setSelectValue,objeto) {
+export function Pickerr (selectValue,setSelectValue,objeto) {
   return    (
       <Picker style={pickerSelectStyles} selectedValue={selectValue.value}
         onValueChange={(itemValue, index)=>setSelectValue.setValue(itemValue)} >
