@@ -1,15 +1,16 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createStackNavigator }     from '@react-navigation/stack';
+import { createDrawerNavigator }    from "@react-navigation/drawer";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {StyleSheet, Text} from 'react-native';
+import {StyleSheet, Text}           from 'react-native';
 
-import Login from './pages/login/index';
-import Home from './pages/home/index';
-import Form from './pages/forms/form1';
-import Form2 from './pages/forms/form2';
-import Grafico from './pages/graficos/index';
+import Login   from './pages/login/index';
+import Home    from './pages/home/index';
+import Form    from './pages/forms/form1';
+import Form2   from './pages/forms/form2';
+// import Grafico from './pages/graficos/index';
+import Formi  from './pages/formik/index';
 
 const AppStack = createStackNavigator();
 const Drawer   = createDrawerNavigator();
@@ -17,8 +18,6 @@ const Tab = createBottomTabNavigator();
 
 const Routes = () => {
   return(
-    
-
 
     <NavigationContainer>
       <Tab.Navigator initialRouteName = "Login" tabBarOptions = {
@@ -32,8 +31,9 @@ const Routes = () => {
       <Tab.Screen name = "Login" component = {Login} />
       <Tab.Screen name = "Home" component = {Home} />
       <Tab.Screen name = "Form" component = {Form} />
+      <Tab.Screen name = "Formik" component = {Formi} />
       <Tab.Screen name = "Form2" component = {Form2} />
-      <Tab.Screen name = "Graficos" component = {Grafico} />
+      {/* <Tab.Screen name = "Graficos" component = {Grafico} /> */}
     </Tab.Navigator>
     {/*     <AppStack.Navigator headerMode='none' >
           <AppStack.Screen name="Home" component={Home} />

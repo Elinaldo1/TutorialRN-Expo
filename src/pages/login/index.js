@@ -10,16 +10,16 @@ export default function Login(){
       </View>
 
       <View style = { Styles.container }> 
-        <TextInput placeholder = 'User' autoCorrect={ false } onChangeText = {()=>{}} />
-        <TextInput placeholder = 'Senha' autoCorrect={ false } onChangeText = {()=>{}} />
+        {/* <TextInput placeholder = 'User' autoCorrect={ false } onChangeText = {()=>{}} /> */}
+        <TextInput placeholder = 'Matrícula' keyboardType="numeric" autoCorrect={ false } onChangeText = {()=>{}} />
 
         <TouchableOpacity>
-          <Text>Acessar</Text>
+          <Text style={Styles.title}>Acessar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <Text>Criar Contar</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
       </View>
     </KeyboardAvoidingView>

@@ -7,6 +7,7 @@ import logo from '../../../assets/cadastrar.png';
 import { TextInput } from 'react-native-gesture-handler';
 import {Picker} from '@react-native-picker/picker';
 import {styles, pickerSelectStyles} from './styles';
+import { withFormik } from 'formik'
 
 function Form () {
   
@@ -51,7 +52,7 @@ function Form () {
   
   return(
     <>
-      <Header caption={selecao} />
+      <Header caption="PLANTIO BSA 2021" />
 
       <TouchableOpacity onPress = {() => navigation.goBack()}>
         <Text >Voltarr</Text>
@@ -59,13 +60,13 @@ function Form () {
 
       <View style={styles.container}>
         <Image source = {logo} style={styles.topImage} />
-        <Text style={styles.title}>Preencha o Formulário abaixo:</Text>
+        <Text style={styles.title}>QUALIDADE PLANTIO BSA 2021</Text>
       </View>
       
        <ScrollView /*style={styles.inputContainer} */>   
              {/* quando o form é grande use ScrollView para rolar, normal(View) */}
-            <TextInput style={styles.input} placeholder="Digite o nome" onChangeText = {handleNameChange} />
-            <TextInput style={styles.input} placeholder="Digite a idade" keyboardType={"numeric"} onChangeText = {handleIdadeChange} />
+            <TextInput style={styles.input} placeholder="Fazenda" onChangeText = {handleNameChange} />
+            <TextInput style={styles.input} placeholder="Responsável" keyboardType={"numeric"} onChangeText = {handleIdadeChange} />
             
             <Picker style={pickerSelectStyles} selectedValue={selecao} 
                    onValueChange={(itemValue, index)=>{setSelecao(itemValue);setEstado(itemValue)}}  >
@@ -82,5 +83,7 @@ function Form () {
         
     </>            
   )};
+
+  
 
 export default Form; 

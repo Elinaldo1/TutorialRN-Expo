@@ -19,5 +19,10 @@ export const Styles = StyleSheet.create({
     justifyContent: 'center',
     width: '90%',
    
+  },
+  title:{
+    fontSize:20,
+    fontWeight:"bold"
   }
+
 });

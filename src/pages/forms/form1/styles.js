@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     alignItems:'center',
-    backgroundColor:'#f90'
+    backgroundColor:'#00b33c'
   },
   inputContainer: {
     margin: 20,
@@ -12,10 +12,12 @@ export const styles = StyleSheet.create({
    //  backgroundColor:''
   },
   topImage:{
-    margin: 20,
+    margin: 20, 
+    
   },
   title:{
     fontSize:20,
+    color:"#fff"
   },
   input:{
     marginTop: 10,
