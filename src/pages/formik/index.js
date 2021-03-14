@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, TextInput, Button } from 'react-native';
+import { View, TextInput, Button, StyleSheet } from 'react-native';
 
 import { withFormik } from 'formik';
 
 const Form = (props) => (
-  <View style={styles.container}>
+  <View style={Styles.container}>
     <TextInput
       value={props.values.email}
       onChangeText={text => props.setFieldValue('email', text)}
@@ -29,3 +29,9 @@ export default withFormik({
     console.log(values);
   }
 })(Form);
+
+const Styles = StyleSheet.create({
+  container:{},
+
+
+})

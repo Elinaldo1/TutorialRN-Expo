@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import styled from 'styled-components/native';
+
 
 export const styles = StyleSheet.create({
   container: {
@@ -25,10 +25,3 @@ export const styles = StyleSheet.create({
   }
 });
 
-export const Text = styled.Text`
-/* deve ficar na pasta components */
- /* font-weight: 'bold'; */
- font-size: 20px;
- /* backgroundColor:#f11; */
-
-`;
